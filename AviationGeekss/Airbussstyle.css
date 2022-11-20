@@ -1,0 +1,547 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    cursor: url("./newcursor2.svg"), auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lora", serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    min-width: 320px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #hidden-nav,
+  #hidlabel {
+    display: none;
+  }
+
+  #secondhidden-nav,
+  #secondhidlabel {
+    display: none;
+  }
+  
+  /*-------- Navigation Bar --------*/
+  .topnav {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .menu #L {
+    color: #ff8605;
+  }
+
+  .nav-link {
+    color: white;
+    transition: color 0.6s ease;
+  }
+  
+  .menu > li {
+    width: 15vw;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+    border-right: 1px solid white;
+  }
+  
+  .menu > li:hover a {
+    color: #ff8605;
+  }
+  
+  .menu > li:last-child {
+    border-right: none;
+  }
+  
+  .menu p {
+    color: #ff8605;
+    position: absolute;
+    left: 100px;
+  }
+
+  .menu div {
+    padding: 0px;
+    position: absolute;
+    left: 0px;
+  }
+  
+  /*-------- Navigation Bar 2 --------*/
+  /*.secondNav {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .secondmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .secondmenu #L {
+    color: #ff8605;
+  }
+
+  .secondnav-link {
+    color: white;
+    transition: color 0.6s ease;
+  }
+  
+  .secondmenu > li {
+    width: 15vw;
+    margin: 0 0 15px 15px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 10px;
+    border-right: 1px solid black;
+  }
+  
+  .secondmenu > li:hover a {
+    color: #ff8605;
+  }
+  
+  .secondmenu > li:last-child {
+    border-right: none;
+  }
+  
+  .secondmenu p {
+    color: #ff8605;
+    position: absolute;
+    left: 100px;
+  }
+
+  .secondmenu div {
+    padding: 0px;
+    position: absolute;
+    left: 0px;
+  }*/
+  
+
+  /*------- Home --------*/
+  .title {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  .head {
+    background-image: url("Untitled-5.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: right center;
+    color: white;
+    height: 600px;
+    text-align: center;
+    display: flex;
+  }
+  
+  #head-quote {
+    height: 200px;
+    flex-basis: 50%;
+    align-self: center;
+  }
+  
+  #head-quote h2 {
+    color: #d76f00;
+  }
+    
+  .home-Airbus {
+    background-color: white;
+    background-image: url("./Airbus/Logo/Logos.png");
+    background-attachment: scroll;
+    background-position: -10% 40%;
+    background-size: 50%;
+    background-repeat: no-repeat, no-repeat;
+    height: 650px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  #about-Airbus {
+    flex-basis: 50%;
+    align-self: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 10%;
+  }
+
+    /*----------- Airbus - 300s -----------*/
+
+  .airbus-a300 {
+    background-color: 	#343d46;
+    background-image: url("./Airbus/A300-1.jpg");
+    background-attachment: fixed;
+    background-position: 90% 60%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #model1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #d76f00;
+  }
+  
+  #a300 {
+    color: white;
+    flex-basis: 50%;
+    align-self: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 0%;
+    padding-left: 7%;
+  }
+
+/*----------- Airbus Beluga -----------*/
+
+.airbus-beluga {
+  background-color: black;
+  background-image: url("./A-Gallery/A300-600STBeluga.jpg");
+  background-attachment: fixed;
+  background-position: 10% 40%;
+  background-size: 35%;
+  background-repeat: no-repeat, no-repeat;
+  height: 650px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#model2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #d76f00;
+}
+  
+#beluga {
+  color: white;
+  flex-basis: 50%;
+  align-self: center;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-right: 10%;
+}
+
+/*----------- Airbus - 310s -----------*/
+
+  .airbus-a310 {
+    background-color: 	#343d46;
+    background-image: url("./Airbus/a310.jpg");
+    background-attachment: fixed;
+    background-position: 90% 50%;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #model3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #d76f00;
+  }
+  
+  #a310 {
+    color: white;
+    flex-basis: 50%;
+    align-self: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 0%;
+    padding-left: 7%;
+  }
+
+/*----------- Airbus A318 -----------*/
+.airbus-a318 {
+  background-color: black;
+  background-image: url("./Airbus/A318.jpg");
+  background-attachment: fixed;
+  background-position: 10% 60%;
+  background-size: 30%;
+  background-repeat: no-repeat, no-repeat;
+  height: 650px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#model4 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #d76f00;
+}
+  
+#a318 {
+  color: white;
+  flex-basis: 50%;
+  align-self: center;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-right: 10%;
+}
+
+/*----------- Airbus - 380s -----------*/
+
+  .airbus-a380 {
+    background-color: 	#343d46;
+    background-image: url("./Airbus/A380.jpg");
+    background-attachment: fixed;
+    background-position: 90% 60%;
+    background-size: 35%;
+    background-repeat: no-repeat;
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #model5 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #d76f00;
+  }
+  
+  #a380 {
+    color: white;
+    flex-basis: 50%;
+    align-self: center;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 0%;
+    padding-left: 7%;
+  }
+
+  /*----------- Gallery Page Section -----------*/
+
+  .gogallery {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+  }
+  
+  .headd {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    color: white;
+    height: 600px;
+    text-align: center;
+    display: flex;
+  }
+  
+  #togotext {
+    height: 200px;
+    flex-basis: 50%;
+    align-self: center;
+  }
+  
+  #togotext h2 {
+    color: #d76f00;
+  }
+
+  .read {
+    color: black;
+
+  }
+
+  #read-btnn {
+    text-align: center;
+    margin: 50px 290px 0;
+    padding: 5px 50px;
+    font-weight: bold;
+    font-size: 1.14em;
+    background-color: goldenrod;
+    border: 5px solid goldenrod;
+    border-radius: 15px;
+    transition: background-color 0.6s ease;
+  }
+  
+  #read-btnn:hover {
+    background-color: snow;
+  }
+
+  /*----------- Footer -----------*/
+  .footer {
+    background-color: #f8b062;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    height: auto;
+    padding: 30px;
+    z-index: 1;
+  }
+  
+  .copyright {
+    flex-basis: 1;
+    padding-top: 15px;
+  }
+
+  .citation {
+    flex-basis: 1;
+    padding-top: 15px;
+  }
+
+/* ========================================== MEDIA QUERIES ===================== */
+
+@media screen and (max-width: 600px) {
+  #hidlabel {
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%, 0);
+    transition: transform 1s ease;
+    background-color: black;
+  }
+
+  .menu > li {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    border-right: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .topnav input:checked ~ ul {
+    display: flex;
+    transform: none;
+    width: 100%;
+  }
+
+  .menu p {
+    position: absolute;
+    left: 1vw;
+    top: -30px;
+  }
+
+  .head {
+    justify-content: center;
+  }
+
+  #head-qoute {
+    align-self: flex-end;
+    margin-bottom: 150px;
+  }
+
+  #head-quote h2 {
+    font-size: 120%;
+  }
+
+  .home-Airbus {
+    background-position: 60% 10%;
+    background-size: 20%;
+    height: 150px;
+  }
+
+  #about-Airbus {
+    flex-basis: 60%;
+    padding-right: -30%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .head {
+    height: 550px;
+  }
+  #head-quote {
+    align-self: flex-end;
+    margin-bottom: 200px;
+  }
+  .home-Airbus {
+    background-position: 60% 10%;
+    background-size: 20%;
+    height: 150px;
+  }
+
+  #about-Airbus {
+    flex-basis: 60%;
+    padding-right: -30%;
+  }
+  
+}
+
+@media screen and (min-width: 960px) {
+  .home-sub {
+    background-position: 0 60%;
+    background-size: contain;
+  }
+}
+
+
+
+ /* .read {
+    color: black;
+  }
+  
+  #read-btnn {
+    text-align: center;
+    margin: 10px 225px 0;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.14em;
+    background-color: goldenrod;
+    border: 5px solid goldenrod;
+    border-radius: 15px;
+    transition: background-color 0.6s ease;
+  }
+
+  #read-btn {
+    text-align: center;
+    margin: 15px 250px 0;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1.14em;
+    background-color: goldenrod;
+    border: 5px solid goldenrod;
+    border-radius: 15px;
+    transition: background-color 0.6s ease;
+  }
+  
+  #read-btn:hover {
+    background-color: snow;
+  } */
